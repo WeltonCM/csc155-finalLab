@@ -9,6 +9,7 @@ Description: This program creates a random 20x20 2D array and returns the peak v
 #include <algorithm>
 #include <map>
 #include <string>
+#include <iomanip>
 
 
 using namespace std;
@@ -136,7 +137,7 @@ int main() {
 
     for(int i=0; i<board.size(); i++){
         for(int j=0; j < board[0].size(); j++){
-            cout << board[i][j] << " ";
+            cout << setw(3) << board[i][j] << " ";
         }
         cout << endl;
     }
